@@ -19,7 +19,7 @@ function search(event) {
     if (location === "") {
         result.innerHTML = "Must enter an address"
     } else {
-        const url = 'http://localhost:3000/weather?address=' + location;
+        const url = '/weather?address=' + location;
         fetch(url).then((response) => {
             response.json().then((data) => {
                 if (data.error) {
