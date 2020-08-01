@@ -36,7 +36,7 @@ function search(event) {
                     result3.innerHTML = ' Feelslike:' + data.Feelslike + ' degree' + '. ';
 
 
-                    console.log(data);
+
                 }
             })
         })
