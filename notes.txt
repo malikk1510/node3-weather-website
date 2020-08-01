@@ -1,0 +1,38 @@
+/* #Express: (NPM module) server se data fetch krne me ya client ko response dene me kaam 
+aata hai, ye ek function hai ,iski bohot saari method hoti hai,jese GET,SET, USE etc.
+Routing k lie bhi use hota hai jese HTTP;
+#Express supports methods that correspond to all HTTP request methods: get, post, and so on.
+#app.get:Routes HTTP GET requests to the specified path with the specified callback functions.
+isme 2 ARGS hote h pehlta hota hai rote k kahanse req kr rhe hai dusra hota hai callback 
+function k jab isse req ho to kya krna hai, jese kisi user ne ek route acces kia to apan usko 
+respond send krte hai like html,json , text.
+exmple:
+app.get('/', function (req, res) {
+  res.send('GET request to homepage')
+})
+.Callback func k 2 ARGS hote req nd res.
+#req:The req object represents the HTTP request and has properties for the request query 
+string, parameters, body, HTTP headers, and so on. In this documentation and by convention,
+ the object is always referred to as req (and the HTTP response is res) but its actual name is 
+ determined by the parameters to the callback function in which you’re working. 
+#res:The res object represents the HTTP response that an Express app sends when it gets an HTTP
+ request.
+ apa user ko kuch bhi bhej skte hai aray,obj, string, url, etc.
+ #JAb apne ko HTML ya JSon YA js ye sb bhejna hai to apan app.use  ka use karte hai.
+ isme apan us jo html file bhej rhe hai uska path define krte hai or jo bhi file jee css js usme lagi h unko
+ same folder me rkha jata hai. jese app.js me publucdirectory path ka use kia h direct
+ public to apan jese agr 3 html file h to unko /index.html krke open kr skte hai .
+ apan single single bhi define krs kte hai:
+
+ /*app.use('/about', express.static(about));
+    app.use('/help', express.static(help));
+    static me path define krna pdta h k wo file kahan hai 
+    #ksisi particular html file ko bhi m get kr skta hoon app.use ka use krke , bas apne ko 
+path define krna pdega fir jo koibhi file h usko apan acces kr skte h
+http://localhost:3000/about1.html
+
+    #HANDLEBARS:An HBS file is a template file created by Handlebars, a web template system. 
+    It contains a template written in HTML code and embedded with Handlebars expressions.
+     An HBS file performs the same function as a . HANDLEBARS file.
+
+*/

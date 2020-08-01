@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+     <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    {{>header}}
+    <form id="form">
+        <input type="text" name="myform" id="input">
+        <input type="submit" value="Search" onclick="search(event)">
+    </form><br>
+     <p id= 'test'></p>
+     <p id= 'test1'></p>
+     <p id= 'test2'></p>
+ <p id= 'test3'></p>
+
+     
+      {{>footer}}
+    {{!-- <h1>Welcome to the homepage</h1> --}}
+   
+<script src="js/app1.js"></script>
+
+</body>
+
+</html>
