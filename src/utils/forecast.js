@@ -11,9 +11,10 @@ const weather = (address, callback) => {
             const weather_data = {
                 weatherDescriptions: response.body.current.weather_descriptions,
                 temperature: response.body.current.temperature,
-                feelslike: response.body.current.feelslike
+                feelslike: response.body.current.feelslike,
+                is_day: response.body.current.is_day
             };
-            const { weatherDescriptions, temperature, feelslike } = weather_data;
+            const { weatherDescriptions, temperature, feelslike, is_day } = weather_data;
             callback(undefined, weather_data);
         }
     })

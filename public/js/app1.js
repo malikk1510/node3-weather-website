@@ -23,7 +23,7 @@ function search(event) {
                 } else {
                     result1.style.display = '';
                     result.innerHTML = 'Current weather information of: ' + data.Location + '.';
-                    result1.textContent = 'Weather_Description :' + data.Weather_Descriptions + ', ' + 'Temperature: ' + data.Temperature + ', degree' + ', ' + ' Feelslike:' + data.Feelslike + ' degree' + '. ';
+                    result1.textContent = 'is_day: ' + data.is_day + ', Weather_Description :' + data.Weather_Descriptions + ', ' + 'Temperature: ' + data.Temperature + ', degree' + ', ' + ' Feelslike:' + data.Feelslike + ' degree' + '. ';
 
 
                 }

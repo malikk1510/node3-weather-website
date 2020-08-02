@@ -60,7 +60,7 @@ app.get('/weather', (req, res) => {
                 error: error
             })
         };
-        forecast.weather(place, (error, { weatherDescriptions, temperature, feelslike } = {}) => {
+        forecast.weather(place, (error, { weatherDescriptions, temperature, feelslike, is_day } = {}) => {
             if (error) {
                 return res.send({
                     error: error
@@ -68,6 +68,7 @@ app.get('/weather', (req, res) => {
             }
             res.send({
                 Location: place,
+                is_day: is_day,
                 Weather_Descriptions: weatherDescriptions,
                 Temperature: temperature,
                 Feelslike: feelslike
