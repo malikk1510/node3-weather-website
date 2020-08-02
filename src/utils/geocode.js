@@ -8,7 +8,7 @@ const geocode = (address, callback) => {
             callback('Invalid input', undefined);
         } else {
             const geo_Data = {
-                place: response.body.features[0].text
+                place: response.body.features[0].place_name
             };
             const { place } = geo_Data;
             // const data = {
