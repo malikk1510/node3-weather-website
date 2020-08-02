@@ -1,9 +1,6 @@
  body {
      background-color: white;
-     /* text-align: center; */
-     /* text-transform: uppercase; */
-     letter-spacing: 5px;
-     color: white;
+     color: black;
      font-size: 20px;
      font-family: Verdana, Geneva, Tahoma, sans-serif
  }
@@ -14,21 +11,51 @@
      margin: 0;
      text-align: center;
      height: 200px;
-     /* margin-top: 250px; */
  }
  
  p {
-     /* font-size: 70px; */
-     /* font-weight: bolder; */
      color: black;
      margin: 0;
-     /* margin-bottom: 40px; */
  }
  
  footer {
-     background-color: black;
+     background-color: whitesmoke;
+     text-align: center;
+     padding: 20px, 0;
+ }
+ 
+ footer h3 {
+     /* background-color: teal; */
+ }
+ 
+ header {
+     text-align: center;
+ }
+ 
+ #form {
+     text-align: center;
+     margin: 20px 0;
  }
  
  header a {
      text-decoration: none;
+     display: inline-block;
+     padding: 20px;
+     /* background-color: yellow; */
+ }
+ 
+ #input {
+     padding: 10px;
+     cursor: pointer;
+ }
+ 
+ #submit {
+     padding: 9px;
+     font-size: 15px;
+     cursor: pointer;
+ }
+ 
+ #main {
+     text-align: center;
+     margin-bottom: 100px;
  }

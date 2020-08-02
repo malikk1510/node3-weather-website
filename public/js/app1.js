@@ -4,17 +4,12 @@ const weatherForm = document.getElementById('form');
 const searchinput = document.getElementById('input');
 const result = document.getElementById('test');
 const result1 = document.getElementById('test1');
-const result2 = document.getElementById('test2');
-const result3 = document.getElementById('test3');
 
 function search(event) {
 
     event.preventDefault();
     result.innerHTML = "Loading.."
     result1.style.display = 'none';
-    result2.style.display = 'none';
-    result3.style.display = 'none';
-
     const location = searchinput.value;
     if (location === "") {
         result.innerHTML = "Must enter an address"
@@ -27,14 +22,11 @@ function search(event) {
 
                 } else {
                     result1.style.display = '';
-                    result2.style.display = '';
-                    result3.style.display = '';
-
                     result.innerHTML = 'Current weather information of ' + location + ':';
-                    result1.innerHTML = 'Weather_Description :' + data.Weather_Descriptions + ', ';
-                    result2.innerHTML = 'Temperature: ' + data.Temperature + ' degree' + ', ';
-                    result3.innerHTML = ' Feelslike:' + data.Feelslike + ' degree' + '. ';
+                    result1.textContent = 'Weather_Description :' + data.Weather_Descriptions + ', ' + 'Temperature: ' + data.Temperature + ', degree' + ', ' + ' Feelslike:' + data.Feelslike + ' degree' + '. ';
 
+                    // result2.innerHTML = 
+                    // result3.innerHTML = 
 
 
                 }

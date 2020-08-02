@@ -31,7 +31,7 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Home Page',
-        message: 'This is where all front data will come.'
+        message: 'Weather telecast.'
     })
 })
 app.get('/about', (req, res) => {
